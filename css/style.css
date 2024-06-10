@@ -1,0 +1,563 @@
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #F4F4F4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Trocchi', serif;
+    color: #222;
+    margin: 20px 0;
+}
+.container {
+    align-items: center;
+    max-width: 1600px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.FistFull {
+        display: flex;
+}
+.funfacts {
+    align-items: center;
+    max-width: 800px;
+    padding: 80px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #222;
+    color: #fff; 
+    position: relative;
+    padding: 20px 0;
+
+}
+.inner_main_menu {
+    margin:  auto; 
+    padding-right: 100px;
+    max-width: 1170px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}    
+
+.inner_main_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure the ul takes full width */
+    justify-content: space-between;
+    
+}  
+
+.inner_main_menu ul li {
+    display: inline-block;
+    position: relative;
+}  
+
+.inner_main_menu ul li:nth-child(1){
+    float: left;
+} 
+
+.inner_main_menu ul li:nth-child(2){
+    float: left;
+}
+
+.inner_main_menu ul li:nth-child(3){
+    float: left;
+}
+
+.inner_main_menu ul li:nth-child(5),
+.inner_main_menu ul li:nth-child(6) {
+    float: right; /* Float the last two items to the right */
+}
+
+.inner_main_menu ul li a {
+    color: #fff; 
+    font-size: 18px; 
+    text-transform: uppercase;
+    text-decoration: none; 
+    display: block;
+    padding: 10px 20px;
+}
+
+.inner_main_menu ul li a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+    transition: color 0.5s ease;
+    
+
+}
+
+
+.logo_area {
+    display: flex;
+    align-items: center;
+}
+
+.logo_area img{
+  width: 100px;
+}
+.hamburger-menu {
+    display: none; /* Initially hide the hamburger menu */
+    cursor: pointer;
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+.hero-image {
+  background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/HeroImage.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 55%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  color: white;
+  max-width: 680px;
+}
+
+.hero-text h1 {
+    color: white;
+}
+
+.hero-text button {
+    border: 2px solid #FFD700; 
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #FFD700; 
+    background-color: transparent; 
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+    font-family: 'Saddleback', serif;
+}
+
+.hero-text button:hover {
+    background-color: #FFD700; 
+    color: #222; 
+}
+
+ img {
+    max-width: 400px; /* Adjust size as needed */
+    margin-right: 100px; 
+    margin-left: 100px; 
+}
+
+.backgroundimg {
+    background-image:url(../img/cast.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.movies-section {
+    padding: 50px 0;
+    background-color: #FFF;
+    
+}
+
+.movies-section h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    max-width: 1600px;
+    padding: 20px;
+    margin: 0 auto;
+    
+}
+.column {
+    flex: 1;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.column h2 {
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.column p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.movie {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.movie img {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    border-radius: 10px;
+}
+
+.movie h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+.new-hero-image {
+    position: relative;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(../img/squint.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.top-left-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+.top-left-info h2{
+    color: white;
+}
+
+.bottom-right-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    max-width: 300px;
+    
+}
+
+.new-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    max-width: 700px;
+}
+.movie-description-section {
+    padding: 50px 0;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-image {
+    width: 50%;
+}
+
+.movie-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.movie-description {
+    width: 50%;
+    padding-left: 40px;
+}
+
+.movie-description h2 {
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.movie-description p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.quote-section {
+    padding: 50px 20px;
+    background-color: #F9E79F; /* Light gold color */
+    text-align: center;
+}
+
+.quote-section blockquote {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    color: #333;
+    margin: 20px auto;
+    max-width: 800px;
+    position: relative;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-left: 10px solid #FFD700;
+    border-radius: 5px;
+}
+
+.quote-section blockquote::before {
+    content: open-quote;
+    font-size: 4em;
+    color: #FFD700;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+.quote-section blockquote footer {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+.third-movie-hero {
+    background-image: url('../img/TheGoodBadUgly.jpg'); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.third-movie-hero .hero-text-left,
+.third-movie-hero .hero-text-right {
+    flex: 1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Adding a slight background to make text readable */
+    border-radius: 5px;
+}
+
+.third-movie-hero .hero-text-left h2,
+.third-movie-hero .hero-text-right h2 {
+    font-family: 'Trocchi', serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.third-movie-hero .hero-text-left p,
+.third-movie-hero .hero-text-right p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.multimedia-section {
+    padding: 50px 20px;
+    background-color: #F4F4F4;
+    text-align: center;
+}
+
+.multimedia-section h2 {
+    font-family: 'Trocchi', serif;
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+.multimedia-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.multimedia-item {
+    background-color: #FFF;
+    padding: 20px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.multimedia-item:hover {
+    transform: scale(1.05);
+}
+
+.multimedia-item a {
+    color: #FFD700;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+.multimedia-item a:hover {
+    text-decoration: underline;
+}
+.about-director {
+    padding: 50px 20px;
+    background-color: #FFF;
+}
+
+.about-director h2 {
+    font-family: 'Trocchi', serif;
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-director-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-director img {
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.about-director-text {
+    flex: 2;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    margin-right: 100px;
+}
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+footer .footer-links {
+    margin: 20px 0;
+}
+
+footer .footer-links a {
+    color: #FFD700;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .footer-links a:hover {
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+
+    .inner_main_menu ul {
+        display: none; /* Hide the menu on small screens */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        background-color: #222;
+        
+    }
+
+    .inner_main_menu ul.open {
+        display: flex; /* Show the menu when open */
+    }
+
+    .hamburger-menu {
+        display: block;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .hamburger-menu i {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .logo_area {
+    position: relative;
+    left: 0;
+    transform: none;
+  
+    }
+    .logo_area img {
+        left: 100px;
+    }
+    .container {
+        display: flex;
+    }
+.column {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+.column img {
+       margin: 0 0 20px 0;
+}
+.third-movie-hero {
+        flex-direction: column;
+        height: auto;
+}
+.multimedia-grid {
+        grid-template-columns: 1fr;
+    }
+ .about-director-content {
+        flex-direction: column;
+        text-align: center;
+        margin-right: auto;
+    }
+
+    .about-director img {
+        margin: 0 0 20px 0;
+    }
+.about-director-text {
+    margin-right: auto;
+    }
+}
